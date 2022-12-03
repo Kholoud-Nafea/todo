@@ -59,20 +59,20 @@ const deleteTodo = async (req, res) => {
     res.status(404).send('Not Found')}
 }
 
-// const getAllTodo =  async (req, res) => {
+const getAllTodo =  async (req, res) => {
 
-//   const todo = await Todo.find({})
-//   if(todo){
-//     res.send(todo).status(200)
-//   } else {
-//     res.status(404).send('Not Found')}
-// }
+  const todo = await Todo.find({})
+  if(todo){
+    res.send(todo).status(200)
+  } else {
+    res.status(404).send('Not Found')}
+}
 
 module.exports = {
   createTodo,
   updateTodo,
   deleteTodo,
   getTodo,
-  // getAllTodo
+  getAllTodo
 }
 

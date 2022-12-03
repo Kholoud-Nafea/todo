@@ -16,6 +16,6 @@ router.delete('/todo/:todoId', deleteTodo)
 router.get('/:todoId', getTodo)
 
 // router.get('/:userId/todo/getAll', getAllTodo)
-// router.get('/todo/getAll', getAllTodo)
+router.get('/todo/getAll', getAllTodo)
 
 module.exports = router
